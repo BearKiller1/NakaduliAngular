@@ -1,0 +1,28 @@
+<div class="Header">
+    <p routerLink="home" routerLinkActive="active">მთავარი</p>
+    <p routerLink="gallery" routerLinkActive="active">გალერეა</p>
+    <img src="../../assets/images/logo.png" alt="">
+    <p routerLink="packets" routerLinkActive="active">პაკეტები</p>
+    <p routerLink="about" routerLinkActive="active">შესახებ</p>
+</div>
+
+<div class="content">
+    <router-outlet></router-outlet>
+
+    <div class="Chat">
+        <img src="../../assets/images/chat.png" alt="">
+    </div>
+</div>
+
+<div class="footer">
+    <div class="PhoneContact">
+        <i class="material-icons" (click)="CopyNumber('555 555 555')">phone</i>
+        <p (click)="CopyNumber('555 555 555')">555 555 555</p>
+    </div>
+
+    <div class="SocialContact">
+        <a href="https://www.facebook.com/gasartobicentri.nakaduli" class="fa fa-facebook"></a>
+        <a href="https://www.swoop.ge/Merchant/370591" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+    </div>
+</div>
