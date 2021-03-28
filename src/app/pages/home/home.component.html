@@ -1,3 +1,9 @@
-<div class="">
+<div class="slide-show" *ngFor="let slide of Slides;index as i" >
+  <div class="slide" *ngIf="toggle[i]">
+    <p class="title"> {{slide.title}} {{slide.id}} </p>
+    <img [src]="slide.img" [alt]="slide.title">
 
+    <div class="prev" (click)="changeSlides(i - 1)">prev</div>
+    <div class="next" (click)="changeSlides(i + 1)">next</div>
+  </div>
 </div>
